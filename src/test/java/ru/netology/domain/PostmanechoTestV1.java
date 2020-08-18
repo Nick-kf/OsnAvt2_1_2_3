@@ -15,7 +15,7 @@ public class PostmanechoTestV1 {
             .when()
             .post("/post")
             .then()
-            .statusCode(200)
+            .statusCode(404)
             .body(matchesJsonSchemaInClasspath("postman.schema.json"));
     }
 }
